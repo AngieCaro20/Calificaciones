@@ -14,11 +14,13 @@ estudiante = "Sara Rodriguez"
 calificaciones = []
 
 #Pedir al usurio las notas de cada curso 
+# Pedir al usuario las notas de cada curso
 for curso in cursos:
-    nota=float(input(f"Ingrese la nota de {curso}: "))
-    calificaciones.append(nota)
+    nota = float(input("Ingrese la nota de {}: ".format(curso)))
+    calificaciones += [nota]   # equivalente a append
 
-print("\n Calificaciones iniciales registradas: ", calificaciones)
+print(f"\nCalificaciones iniciales registradas: {calificaciones}")
+
 
 
 #Menu interactivo (permite interactuar hasta que el usuario decida salir.) 
