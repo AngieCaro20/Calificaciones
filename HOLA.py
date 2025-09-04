@@ -1,5 +1,5 @@
 print("__________BIENVENIDOS__________")
- 
+ #mini sistema de regitro de calificaiones
 
 #Memoria estatica (inmutable)
 #Tupla que no cambia con los cursos del semestre 
