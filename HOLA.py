@@ -37,7 +37,8 @@ while True:
         print(f"\n Calificaciones de {estudiante}:")
         for i, curso in enumerate(cursos):
             #enumerate da el indice o el valor (se usa para mostrar cursos con número y su nota.)
-            print(f"{i+1}. {curso}: {calificaciones[i]}")
+            print("{}. {}: {}".format(i+1, curso, calificaciones[i]))
+
 
     #Opcion 2 
     elif opcion == "2":
@@ -64,7 +65,8 @@ while True:
         notas_validas =[n for n in calificaciones if n is not None]
         if notas_validas:
             promedio = sum(notas_validas) / len(notas_validas)
-            print(f"El promedio final de {estudiante} es: {promedio: .2f}")
+            print("El promedio final de {} es: {}".format(estudiante, round(promedio, 2)))
+
         else:
             print("No hay calificaciones registradas. ")
 
