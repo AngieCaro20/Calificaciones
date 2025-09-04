@@ -1,4 +1,4 @@
-print("Hola Mundo")
+print("__________BIENVENIDOS__________")
 #mini sistema de regitro de calificaiones 
 
 #Memoria estatica (inmutable)
